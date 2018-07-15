@@ -3,9 +3,10 @@
   @auth
   <div class="container">
     <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-12 col-lg-6">
       {{-- <button type="submit" class="btn btn-success mb-3" value="Send">Add device</button> --}}
       <a href="{{route('home')}}" class="btn btn-success mb-3">Add device</a>
+      {{-- Display devices --}}
       <table class="table">
           <thead>
             <tr>
@@ -28,12 +29,13 @@
             @endif
           @endforeach
       </table>
+
       <div class="">
         {{$devices->links()}}
       </div>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-12 col-lg-6">
       <h1>My Map</h1>
       <div id="map">
       </div>

@@ -30,7 +30,7 @@
 
       <div class="form-group">
         <label class="d-block">Coordinates:</label>
-        <input type="text" class="form-control-sm" id="coordinatesLat" placeholder="Enter latitude" name="latitude">
+        <input type="text" class="form-control-sm mb-1" id="coordinatesLat" placeholder="Enter latitude" name="latitude">
         <input type="text" class="form-control-sm" id="coordinatesLong" placeholder="Enter longitude" name="longitude">
         @if ($errors->has('latitude'))
           <div class="alert alert-danger mt-4 col-sm-4">
@@ -42,7 +42,7 @@
 
       <div class="form-group">
         <label for="select" class="d-block">Please select one of the following options:</label>
-        <select class="form-control col-sm-3" id="select" name="type">
+        <select class="form-control col-7 col-sm-5 col-md-4 col-lg-3" id="select" name="type">
           <option name="" value="" disabled selected>Select your option</option>
           <option name="home" value="home">1. Home</option>
           <option name="work" value="work">2. Work</option>
@@ -53,7 +53,7 @@
           </div>
         @endif
       </div>
-      <button type="submit" class="btn btn-success" value="Send">Send</button>
+      <button type="submit" class="btn  btn-success" value="Send">Send</button>
     </form>
 </div>
 @endsection
